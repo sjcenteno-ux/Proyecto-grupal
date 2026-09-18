@@ -55,3 +55,7 @@ def registrarNota():
 
         except ValueError:
             print("Debe ingresar un valor numérico.")
+
+def limpiarDatos():
+    subjects.clear()
+    grades.clear() 

@@ -3,9 +3,16 @@ grades = []
 
 
 def leerEstudiante():
-    studentName = input("Ingrese el nombre del estudiante: ")
-    return studentName
 
+    while True:
+        studentName = input("Ingrese el nombre del estudiante: ")
+
+        try:
+            float(studentName)
+            print("El nombre del estudiante no puede ser un número.")
+
+        except ValueError:
+            return studentName
 
 def elegirOpcion():
 
